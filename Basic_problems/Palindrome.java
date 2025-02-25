@@ -1,6 +1,6 @@
 import java.util.*; 
 
-public class Main { 
+public class  Palindrome{ 
     public static boolean isPalindrome(int n) {
         int org = n;
         int sum = 0;
