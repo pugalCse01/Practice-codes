@@ -1,5 +1,6 @@
+import java.util.*;
 class Amstrong{
-  public Static void main (String[] args){
+  public static void main (String[] args){
     Scanner sc = new Scanner(System.in);
     int n= sc.nextInt();
     int org = n;
@@ -12,7 +13,7 @@ class Amstrong{
     if(sum == org){
       System.out.println(" it is a amstrong number");
     }
-    eslse{
+    else{
       System.out.println("it is not a amstrong number");
     }
       
