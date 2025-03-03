@@ -4,11 +4,11 @@ class Solution {
         // code here
         Arrays.sort(arr);
         for(int i = 0;i<arr.length;i++){
-            if(arr[i]!= (i+1)){
-                return i+1;
+            if(arr[i]!= (i+1)){ //1 =! (0+1) 
+                return i+1;  // based on index value 
             }
         }
-        return arr.length+1;
+        return arr.length+1; // return if the all elements are there it will return the next element like 1,2,3,4,5 is there so next missing element is 6  
     }
 }
 import java.util.*;
