@@ -22,7 +22,7 @@ class Solution {
         return false;
     }
 }
-class Main {
+class Two_sum {
     public static void main(String[] args) {
         int[] arr = {1, 4, 45, 6, 10, 8};
         int target = 16;
