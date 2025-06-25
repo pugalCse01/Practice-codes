@@ -1,22 +1,22 @@
 import java.util.*;
 
-class  lettersMultiplier{
+class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the string: ");
         String s = sc.nextLine();
 
-        for (int i = 1; i < s.length(); i++) {
-            char c = s.charAt(i);
-
-            // If current char is a digit
-            if (Character.isDigit(c)) {
-                int n = c - '0';  // Convert char digit to int
-                char prevChar = s.charAt(i - 1);  // Get the letter before the digit
-                String str = String.valueOf(prevChar);
-                String repetitions = str.repeat(n);
-                System.out.print(repetitions);
+        int i = 0;
+        while (i < s.length()) {
+            char letter = s.charAt(i); 
+            i++;
+            String num = "";
+            while (i < s.length() && Character.isDigit(s.charAt(i))) {
+                num += s.charAt(i);
+                i++;
             }
+            int count = Integer.parseInt(num);
+            System.out.print(String.valueOf(letter).repeat(count));
         }
     }
 }
